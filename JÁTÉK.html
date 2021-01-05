@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>RPG</title>
+</head>
+<body>
+    
+    <img src="" id="profilPic" alt="">
+    <button onclick="LevelUp()">LevelUp </button>
+    <table>
+        <tr>
+            <td>életerő</td>
+            <td id="life">100</td>
+            <td ><button class="addBtn" onclick="addlife()" >+</button></td>
+        </tr>
+        <tr>
+            <td>erő</td>
+            <td id="strenght">0</td>
+            <td ><button class="addBtn" onclick="addStrenght()" >+</button></td>
+        </tr>
+        <tr>
+            <td>ügyesség</td>
+            <td id="agility">0</td>
+            <td ><button class="addBtn" onclick="addAgility()" >+</button></td>
+        </tr>
+        <tr>
+            <td>inteligencia</td>
+            <td id="intelligence">0</td>
+            <td><button class="addBtn" onclick="addIntelligence()" >+</button></td>
+        </tr>
+        <tr>
+            <td>hit</td>
+            <td id="Faith">0</td>
+            <td><button class="addBtn" onclick="addFaith()" >+</button></td>
+        </tr>
+        <tr>
+            <td>Szerencse</td>
+            <td id="Luck">0</td>
+            <td><button class="addBtn" onclick="addLuck()" >+</button></td>
+        </tr>
+        <tr>
+            <td>defense</td>
+            <td id="defense">0</td>
+            <td><button class="addBtn" onclick="adddefense()" >+</button></td>
+        </tr>
+        <tr>
+            <td>Tapasztalat</td>
+            <td id="XP">0</td>
+        </tr>
+        <div id="kaland_oldal" class="oldal">
+            <div id="history" ></div>
+            <button onclick="kalandozas()">Megyek kalandozni!</button>
+        </div>
+        
+    </table>
+<script src="SCRIPT.js"></script>
+
+</body>
+</html>
