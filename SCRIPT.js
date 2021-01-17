@@ -13,8 +13,27 @@ let lvl = 0;
 
 let lvl_description = [
     ["Egy gyenge kalandor vagy!", "prof_lvl0.jpg"],
+    ["Egy gyenge kalandor vagy!", "prof_lvl0.jpg"],
+    ["Egy gyenge kalandor vagy!", "prof_lvl0.jpg"],
+    ["Egy gyenge kalandor vagy!", "prof_lvl0.jpg"],
+    ["Kalandor lettél!","prof_lvl1.jpg"],
+    ["Kalandor lettél!","prof_lvl1.jpg"],
+    ["Kalandor lettél!","prof_lvl1.jpg"],
+    ["Kalandor lettél!","prof_lvl1.jpg"],
     ["Kalandor lettél!","prof_lvl1.jpg"],
     ["Kalandor céh megbecsült tagja lettél!","prof_lvl2.jpg"],
+    ["Kalandor céh megbecsült tagja lettél!","prof_lvl2.jpg"],
+    ["Kalandor céh megbecsült tagja lettél!","prof_lvl2.jpg"],
+    ["Kalandor céh megbecsült tagja lettél!","prof_lvl2.jpg"],
+    ["Kalandor céh megbecsült tagja lettél!","prof_lvl2.jpg"],
+    ["Kalandor céh megbecsült tagja lettél!","prof_lvl2.jpg"],
+    ["Kalandor céh megbecsült tagja lettél!","prof_lvl2.jpg"],
+    ["Te vagy a céh legerősebb tagja és a vezetője is!", "prof_lvl3.jpg"],
+    ["Te vagy a céh legerősebb tagja és a vezetője is!", "prof_lvl3.jpg"],
+    ["Te vagy a céh legerősebb tagja és a vezetője is!", "prof_lvl3.jpg"],
+    ["Te vagy a céh legerősebb tagja és a vezetője is!", "prof_lvl3.jpg"],
+    ["Te vagy a céh legerősebb tagja és a vezetője is!", "prof_lvl3.jpg"],
+    ["Te vagy a céh legerősebb tagja és a vezetője is!", "prof_lvl3.jpg"],
     ["Te vagy a céh legerősebb tagja és a vezetője is!", "prof_lvl3.jpg"],
     ["Megöregedtél, nem vagy tagja már a kalandor céhnek. Vissza vonultál. Te vagy a legerőssebb az országban!", "prof_lvl4.jpg"]
 ];
