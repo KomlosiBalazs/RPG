@@ -59,7 +59,7 @@ function refreshProfileStats(){
     profile_stats.inteligence.innerHTML=stats.inteligence;
     profile_stats.experience.innerHTML = stats.experience;
     profile_stats.description.innerHTML = lvl_description[lvl][0];
-    profile_stats.next_level.innerHTML = 10;
+    profile_stats.next_level.innerHTML = 100;
     display_addBtns();
 }
 
@@ -168,7 +168,7 @@ function fight(e_name, e_damage, e_life, e_defense, e_dodge)
                 refreshProfileStats();
             }else{
                 story.innerHTML += "Ellenfeled el vétette!<br>";
-                stats.experience+= 0,3;
+                stats.experience+= 1;
             }
 
         }else{
