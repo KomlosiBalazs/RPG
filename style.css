@@ -63,6 +63,6 @@ h1{
 }
 
 #adventure_page button:hover{
-    background-color: white;
+    background-color: rgb(175, 245, 10);
     font-weight: bold;
 } 
