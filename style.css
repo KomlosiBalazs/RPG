@@ -1,14 +1,14 @@
 body{
     margin: 0;
-    background-color: #828C5D;
-    color: #730D0D;
-    font-family: 'MedievalSharp', cursive;
+    background-color: #115c0e;
+    color: #000000;
+    font-family: 'Sans', cursive;
     font-size: 1.2em;
 }
 
 .container nav{
     height: 50px;
-    background-color: #A66E68;
+    background-color: #eeeeee;
 }
 
 nav button{
@@ -35,19 +35,19 @@ h1{
 .footer{
     height: 50px;
     width: 100%;
-    background-color: #A66E68;
+    background-color: #e0dd1c;
 }
 
 #profile_page{
-    background-color: #F2E0D0;
+    background-color: #b18d41;
 }
 
 #adventure_page{
-    background-color: #BFAC73;
+    background-color: #af7f52;
     display: none;
 }
 
-#profile_pics{
+#prof_pics{
     width: 200px;
     height: 300px;
     margin-left: calc(50% - 100px);
@@ -65,4 +65,4 @@ h1{
 #adventure_page button:hover{
     background-color: white;
     font-weight: bold;
-}
+} 
