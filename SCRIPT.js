@@ -113,7 +113,9 @@ function lvl_up(){
     if(stats.experience>=10 && lvl < lvl_description.length - 1){
             available_points += 5;
             stats.life+=100;
+            stats.experience-=stats.experience;
             lvl++;
+
             refreshProfileStats();
     }
 }
@@ -190,5 +192,5 @@ function fight(e_name, e_damage, e_life, e_defense, e_dodge)
 
         enemy_attack = !enemy_attack;
 
-    } while (counter==10);
+    } while (counter<=10);
 } 
