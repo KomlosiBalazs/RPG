@@ -35,7 +35,7 @@ let lvl_description = [
     ["Te vagy a céh legerősebb tagja és a vezetője is!", "prof_lvl3.jpg"],
     ["Te vagy a céh legerősebb tagja és a vezetője is!", "prof_lvl3.jpg"],
     ["Te vagy a céh legerősebb tagja és a vezetője is!", "prof_lvl3.jpg"],
-    ["Megöregedtél, nem vagy tagja már a kalandor céhnek. Vissza vonultál. Te vagy a legerőssebb az országban!", "prof_lvl4.jpg"]
+    ["Megöregedtél, nem vagy tagja már a kalandor céhnek. Vissza vonultál. Te vagy a legerőssebb az országban,még mindig!", "prof_lvl4.jpg"]
 ];
 
 let profile_stats = {
@@ -135,7 +135,7 @@ function kalandozas(){
     if(szazalek >= sebzes_eselye){
         story.innerHTML += "Megsebződtél (-1 élet)<br>";
         stats.life -= 1;
-        fight("Farkas", 1, 100);
+        fight("Rabló", 4, 100, 25, 5);
         refreshProfileStats();
     }else{
         story.innerHTML += "Tapasztalatot szereztél! (+1)<br>";
@@ -144,7 +144,7 @@ function kalandozas(){
     }
 }
 
-function fight(e_name, e_damage, e_life)
+function fight(e_name, e_damage, e_life, e_defense, e_dodge)
 {
     story.innerHTML += "Kalandozás közben megtámadott téged egy " + e_name + "!<br>";
 
@@ -171,19 +171,24 @@ function fight(e_name, e_damage, e_life)
 
         }else{
             let szazalek = rnd_szazalek();
-            let sebzes_eselye = 40 + stats.endurance;
+            let sebzes_eselye =stats.strength/e_defense;
             if(sebzes_eselye >= 100) sebzes_eselye = 99;
             if(szazalek >= sebzes_eselye){
                 story.innerHTML += "Rátámadsz ellenfeledre! ("+e_name+" -"+stats.strength+" élet)<br>";
-                e_life -= stats.strength;
-                story.innerHTML += e_name + "-nek maradt " + e_life;
+                e_life -= stats.strength/e_dodge;
+                story.innerHTML += e_name + "-nek maradt " + e_life+" élete ";
                 refreshProfileStats();
-            }else{
+            }
+            else if(e_life<=0){
+                story.innerHTML +="Ellenfeled meghalt.(szegény...)";
+
+            }
+            else{
                 story.innerHTML += "Ellenfeled el kerülte a támadásod!<br>";
             }
         }
 
         enemy_attack = !enemy_attack;
 
-    } while (counter <=  10);
+    } while (counter==10);
 } 
